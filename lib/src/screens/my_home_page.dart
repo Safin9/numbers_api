@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: const Text('send')),
             FutureBuilder<String>(
-              future: service.getInfo(
+              future: service.dayofmonth(
                   numb: controller.value.text == ''
                       ? '1'
                       : controller.value.text),
